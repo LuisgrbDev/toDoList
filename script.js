@@ -13,6 +13,7 @@ function enviarTarefas() {
         `
 
     }
+    inputTarefa.value= "";
 }
 
 function marcarConcluida(botaoConluir) {
