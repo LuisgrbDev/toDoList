@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,7 +23,6 @@ body {
 ul {
     list-style-type: none;
     padding: 0;
-
 }
 
 li {
@@ -34,10 +32,9 @@ li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-  display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 li.completed {
@@ -45,7 +42,6 @@ li.completed {
     opacity: 0.7;
     font-family: 'Ubuntu Mono';
     font-size: 25px;
-
 }
 
 input[type="text"] {
@@ -57,7 +53,9 @@ input[type="text"] {
     border-radius: 10px;
 }
 
-button {
+button,
+.remover,
+.concluido {
     font-family: 'Ubuntu Mono';
     font-size: 25px;
     opacity: 1;
@@ -67,34 +65,17 @@ button {
     width: auto;
     border: none;
     font-weight: bold;
-   
-   
 }
 
 .remover {
     background-color: red;
-    font-family: 'Ubuntu Mono';
     font-size: 20px;
-    padding: px;
-    border-radius: 45px;
-    cursor: pointer;
-    width: auto;
-    font-weight: bold;
-    display: flex;
 }
 
 .concluido {
-    font-family: 'Ubuntu Mono';
-    font-size: 20px;
     background-color: greenyellow;
-    padding: 9px;
-    border-radius: 45px;
-    cursor: pointer;
-    width: auto;
-    font-weight: bold;
-    display: flex;
+    font-size: 20px;
 }
-
 
 footer {
     position: absolute;
@@ -104,4 +85,25 @@ footer {
     text-align: center;
     font-size: 15px;
     font-family: sans-serif;
+}
+
+/* Adicionando consulta de mídia para telas menores que 600 pixels (celulares) */
+@media only screen and (max-width: 600px) {
+    .container h1 {
+        font-size: 40px; /* Ajuste o tamanho da fonte conforme necessário para telas menores */
+    }
+
+    li,
+    input[type="text"],
+    button,
+    .remover,
+    .concluido {
+        font-size: 16px; margin-top: 5px;/* Ajuste o tamanho da fonte conforme necessário para telas menores */
+    }
+
+   
+
+    input[type="text"] {
+        width: 80%; /* Ajuste a largura conforme necessário para telas menores */
+    }
 }
