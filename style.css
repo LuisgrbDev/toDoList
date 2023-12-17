@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,39 +8,100 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(230deg, rgb(122, 35, 165) 0%, rgb(44, 180, 76) 100%);
 }
 
 .container {
     text-align: center;
 }
 
+.container h1 {
+    font-family: 'Ubuntu Mono';
+    font-size: 65PX;
+    color: #fff;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
+
 }
 
 li {
+    font-size: 25px;
     background-color: #fff;
+    opacity: 0.7;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-    display: flex;
+  display:flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 li.completed {
     text-decoration: line-through;
     opacity: 0.7;
+    font-family: 'Ubuntu Mono';
+    font-size: 25px;
+
 }
 
 input[type="text"] {
+    border: none;
+    font-size: 20px;
+    width: 240px;
     padding: 8px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 button {
-    padding: 8px;
+    font-family: 'Ubuntu Mono';
+    font-size: 25px;
+    opacity: 1;
+    padding: 9px;
+    border-radius: 45px;
     cursor: pointer;
+    width: auto;
+    border: none;
+    font-weight: bold;
+   
+   
+}
+
+.remover {
+    background-color: red;
+    font-family: 'Ubuntu Mono';
+    font-size: 20px;
+    padding: px;
+    border-radius: 45px;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    display: flex;
+}
+
+.concluido {
+    font-family: 'Ubuntu Mono';
+    font-size: 20px;
+    background-color: greenyellow;
+    padding: 9px;
+    border-radius: 45px;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    display: flex;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
 }
